@@ -3,52 +3,54 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+const SideBar = ({ title }) => {
+  const header = (
+    <h3
+      style={{
+        fontFamily: `Montserrat, sans-serif`,
+        marginTop: 0,
+        fontWeight: '700',
+        fontSize: '1.2rem'
+      }}
+    >
+      <Link
+        style={{
+          boxShadow: `none`,
+          textDecoration: `none`,
+          color: `inherit`,
+        }}
+        to={`/`}
+      >
+        {title}
+      </Link>
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+    </h3>
+  )
+
+  return (
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      marginRight: '16px'
+    }}>
+      <header>{ header }</header>
+      <div style={{
+        color: '#7b7b7b'
+      }}>MLE @ FactSet Research Systems.</div>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column'
+      }}>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+        <a href="#">Github</a>
+        <a href="#">Resume</a>
+      </div>
+    </div>
+  )
+}
+
+const Layout = ({ location, title, children }) => {
   return (
     <div
       style={{
@@ -56,15 +58,13 @@ const Layout = ({ location, title, children }) => {
         marginRight: `auto`,
         maxWidth: rhythm(24),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        display: 'flex',
+        alignContent: 'flex-start'
       }}
     >
-      <header>{header}</header>
+      <SideBar title={title} />
+      <div style={{ borderLeft: '1px solid #7b7b7b', height: '50%' }}>{``}</div>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
     </div>
   )
 }

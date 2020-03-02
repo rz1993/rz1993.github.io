@@ -1,0 +1,95 @@
+.border {
+  border: 1px solid black;
+}
+
+.timeline-container {
+  display: flex;
+  width: 700px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header {
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  margin-right: .625rem;
+}
+
+.header-divider {
+  border-bottom: 2px solid #ddd;
+  flex-grow: 1;
+  margin: 0rem 5rem 0rem .625rem;
+}
+
+.timeline {
+  list-style: none;
+  border-left: 1px solid #aaa;
+  padding: 0rem;
+  margin: 0;
+  //margin-top: 1.25rem;
+  width: 150px;
+}
+
+.timeline-item {
+  margin: 0;
+  padding: 1rem;
+  height: 50px;
+  width: inherit;
+  font-size: .875rem;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.timeline-item:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.timeline-item-active {
+  color: black;
+  background-color: #eee;
+  font-weight: 500;
+}
+
+.timeline-text {
+  flex-grow: 1;
+  padding: 0 0 0 2.5rem;
+}
+
+.timeline-header {
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: .3125rem;
+}
+
+.timeline-subheader {
+  font-size: 1.125rem;
+  font-weight: 400;
+  display: block;
+  color: #aaa;
+  margin-bottom: .8125rem;
+}
+
+.timeline-desc-hidden {
+  display: none;
+}
+
+.timeline-desc-active {
+  display: inherit;
+}
+
+.marker {
+  height: 50px;
+  position: absolute;
+  border-left: 2px solid black;
+  transition: .3s;
+}
+
+.header-company {
+  color: Dodgerblue;
+}

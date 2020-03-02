@@ -1,0 +1,37 @@
+.tag-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tag-label {
+  margin-right: .3125rem;
+  font-weight: 600;
+  line-height: 2.0625rem;
+}
+
+.tag-wrapper {
+  z-index: 1;
+  height: 50px;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3125rem 1.25rem;
+  margin: .3125rem .625rem .3125rem 0;
+  border: 1px solid #e2e2e2;
+  border-radius: 5%;
+  background-color: white;
+  z-index: 2;
+  //position: absolute;
+}
+
+.tag:hover {
+  color: Dodgerblue;
+  cursor: pointer;
+  border: 2px solid Dodgerblue;
+  transform: scale(1.1);
+  transition: .25s;
+}

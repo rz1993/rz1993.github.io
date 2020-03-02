@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -24,15 +24,17 @@ const Bio = () => {
       site {
         siteMetadata {
           author
+          description
           social {
-            twitter
+            github
+            linkedin
           }
         }
       }
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author, description, social } = data.site.siteMetadata
   return (
     <div
       style={{
@@ -54,12 +56,19 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        { description }
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        <div style={{
+          display: 'flex'
+        }}>
+          <a href={`https://github.com/${social.github}`}>
+            Github
+          </a>
+          <a href={social.linkedin}>
+            LinkedIn
+          </a>
+          <Link to='/blog/'>Blog</Link>
+        </div>
       </p>
     </div>
   )

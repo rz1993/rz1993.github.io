@@ -1,0 +1,54 @@
+.container {
+  min-width: 300px;
+  max-width: 350px;
+  border-right: 1px solid #eee;
+  padding: 2.5rem 3.1875rem;
+}
+
+.link {
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: black;
+  box-shadow: none;
+  font-weight: 400;
+}
+
+.link:hover {
+  font-weight: 500;
+  box-shadow: 0 1px 0 0 currentColor;
+}
+
+.link-container {
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sitename {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.sitename-link {
+  margin-right: .25rem;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.github {
+  text-decoration: none;
+  color: #164bc5;
+  font-size: 1rem;
+  box-shadow: none;
+}
+
+.description {
+  color: #a2a2a2;
+  line-height: 1.8125rem;
+  margin-bottom: 2rem;
+}

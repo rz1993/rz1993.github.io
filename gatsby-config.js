@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Roland Zhou`,
+    author: `Roland Zhou`,
+    description: `Machine Learning @ FactSet. This is my blog about Software, AI and this adventure we call life.`,
+    siteUrl: `https://rz1993.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      github: `rz1993`,
+      linkedin: 'https://www.linkedin.com/in/roland-zhou-45919a41/'
     },
   },
   plugins: [
@@ -31,6 +32,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              quality: 100,
             },
           },
           {
@@ -73,6 +75,22 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`400`, `400i`, `700`, `700i`],
+            subsets: [`latin-ext`]
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`]
+          },
+        ],
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

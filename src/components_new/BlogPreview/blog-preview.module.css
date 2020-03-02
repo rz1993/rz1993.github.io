@@ -1,0 +1,40 @@
+.container {
+  margin-bottom: 2.03125rem;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: .40625rem;
+  line-height: 2.03125rem;
+}
+
+.sub-header {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.625rem;
+}
+
+.sub-header-spacer {
+  margin: 0.3125rem;
+}
+
+.sub-header-tag {
+  color: #0f9640;
+}
+
+.description {
+  line-height: 1.625rem;
+  font-size: 1rem;
+  margin-top: .813rem;
+  margin-bottom: .40625rem;
+}
+
+.blog-link {
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: none
+}
+
+.blog-link:hover {
+  box-shadow: 0 1px 0 0 currentColor;
+}

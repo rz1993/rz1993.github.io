@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 1.0625rem;
+  box-shadow: 0 4px 15px #f3f3f3;
+}
+
+.header {
+  display: flex;
+  font-size: 1.3125rem;
+  margin: 0.8125rem 0.40625rem;
+  align-items: center;
+}
+
+.image {
+  margin-right: 1.0625rem;
+  margin-bottom: 0;
+  min-width: 50;
+  border-radius: 100%;
+}
+
+.link {
+  box-shadow: none;
+  text-decoration: none;
+  color: black;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-right: 1.0625rem;
+}
+
+.link:last-child {
+  margin-right: 0;
+}
+
+.title-link {
+  font-size: 1.2rem;
+}
+
+.link-container {
+  display: flex;
+  margin: 0.8125rem 0.40625rem;
+}

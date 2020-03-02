@@ -1,7 +1,9 @@
 ---
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
+date: "2020-02-01T22:12:03.284Z"
 description: "Hello World"
+tag: "Blogging"
+tags: "Blogging,PyTorch,Machine Learning"
 ---
 
 This is my first post on my new fake blog! How exciting!
