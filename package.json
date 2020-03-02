@@ -62,4 +62,3 @@
     "deploy": "gatsby build && gh-pages -d public -b master"
   }
 }
-}

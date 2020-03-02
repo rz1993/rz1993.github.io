@@ -26,7 +26,7 @@ const NavLink = ({ to, text, last }) => {
 const Sidebar = () => {
   const data = useStaticQuery(graphql`
     query SideBarQuery {
-      avatar: file(absolutePath: { regex: "/pic-roland.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic-cropped.jpg/" }) {
         childImageSharp {
           fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
